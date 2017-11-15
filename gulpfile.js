@@ -20,7 +20,7 @@ var lib = require('bower-files')({
   }
 });
 var browserSync = require('browser-sync').create();
-
+var syllable = require('syllable');
 
 gulp.task('myTask', function(){
   console.log('hello gulp');

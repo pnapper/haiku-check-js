@@ -11,6 +11,11 @@ export class HaikuChecker {
     {
       return true;
     }
+  }
+
+  CheckLines() {
+    //Checking if Line 1 has 5 syllables
+
 
     //
 

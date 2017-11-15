@@ -1,4 +1,4 @@
-import { HaikuChecker } from './../js/haikuchecker.js';
+import {HaikuChecker} from './../js/haikuchecker.js';
 
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
