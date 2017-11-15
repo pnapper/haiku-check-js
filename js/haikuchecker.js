@@ -45,4 +45,5 @@ export class HaikuChecker {
     }
     return IsHaiku;
   }
+
 }
