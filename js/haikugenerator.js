@@ -12,11 +12,15 @@ export class HaikuGenerator {
 
   DecodeIP(ipAddress) {
     //Decodes IP Address into Haiku
-    var hipku = require('hipku');
+    let hipku = require('hipku');
     let thisipAddress = ipAddress;
-    // let newHaiku = this.newHaiku;
     let newHaiku = hipku.encode(thisipAddress);
 
     return newHaiku;
   }
+
+  // DisplayHaiku(newHaiku) {
+  //
+  //   let newHaiku = syllable()
+  // }
 }

@@ -94,11 +94,16 @@ var HaikuGenerator = exports.HaikuGenerator = function () {
       //Decodes IP Address into Haiku
       var hipku = require('hipku');
       var thisipAddress = ipAddress;
-      // let newHaiku = this.newHaiku;
       var newHaiku = hipku.encode(thisipAddress);
 
       return newHaiku;
     }
+
+    // DisplayHaiku(newHaiku) {
+    //
+    //   let newHaiku = syllable()
+    // }
+
   }]);
 
   return HaikuGenerator;
@@ -2054,7 +2059,7 @@ function splitIp(ip, ipv6) {
   } else {
     decimalOctetArray = octetArray;
   }
-
+  //array of numbers
   return decimalOctetArray;
 }
 
@@ -4999,15 +5004,17 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("button#newHaiku").click(function (event) {
     event.preventDefault();
-    console.log('hello you are in HaikuGenerator');
 
     var autoHaiku = new _haikugenerator.HaikuGenerator();
     var ipAddress = autoHaiku.GenerateIP();
     console.log(ipAddress);
 
     var newHaiku = autoHaiku.DecodeIP(ipAddress);
-    console.log(newHaiku);
-    $("#result").text(newHaiku);
+    var haikuArray = newHaiku.split("\n");
+    console.log(haikuArray);
+    for (var i = 0; i < 3; i++) {
+      $("#result").append(haikuArray[i] + "<br>");
+    }
   });
 });
 
