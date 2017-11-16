@@ -1,5 +1,6 @@
 import {HaikuChecker} from './../js/haikuchecker.js';
 
+
 describe('HaikuChecker', function() {
   it('should test whether a Haiku has 3 lines', function() {
     var haikuChecker = new HaikuChecker('simple', 'line', 'here')
@@ -18,8 +19,5 @@ describe('HaikuChecker', function() {
     var haikuChecker = new HaikuChecker('An old silent pond', 'A frog jumps into the pond', 'splash! Silence again')
     expect(haikuChecker.CheckSyllables()).toEqual(true)
   });
-  
-
-
 
 });

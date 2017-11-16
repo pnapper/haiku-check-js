@@ -35,6 +35,8 @@
     "watchify": "^3.9.0"
   },
   "dependencies": {
+    "hipku": "^2.0.0",
+    "random-ip": "0.0.1",
     "syllable": "^3.0.0",
     "test": "^0.6.0"
   },

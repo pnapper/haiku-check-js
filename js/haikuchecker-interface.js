@@ -12,7 +12,6 @@ $(document).ready(function() {
 
     // haiku.push([lineOne, lineTwo, lineThree]);
     let userHaiku = new HaikuChecker(lineOne, lineTwo, lineThree);
-    alert(lineOne);
     let resultLine = userHaiku.CheckLines();
     let resultSyllables = userHaiku.CheckSyllables();
 
